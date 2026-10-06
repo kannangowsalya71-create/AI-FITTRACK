@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+}
+
+.card {
+  width: 400px;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.card h1 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2196f3;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.linkButton {
+  background: none;
+  color: #2196f3;
+  padding: 5px;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 30px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+  margin-right: auto;
+}
+
+.content {
+  padding: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.workoutForm {
+  max-width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.workoutList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.workoutItem {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aiResult {
+  margin-top: 25px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  max-width: 600px;
+}
+
+@media (max-width: 800px) {
+  .cards,
+  .workoutList {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
